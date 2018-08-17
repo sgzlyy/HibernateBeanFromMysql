@@ -1,4 +1,4 @@
-NDDD
+HibernateBeanFromMysql
 =================
 项目开发部数据库小工具，可以生产Tmodel以及Excel。
 需要JDK1.8
