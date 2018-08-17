@@ -9,6 +9,6 @@ pushd %CURRENT_DIR%
 
 set JDK_PATH=%CD%\jre\bin\javaw.exe
 
-set cp=".;%lib%nddd.jar;"
+set cp=".;%lib%HibernateBeanFromMysql.jar;"
 
-"%JDK_PATH%" -Xmx1024M -cp %cp% cn.com.sby.hbfm.NDDDLaunch %1
+"%JDK_PATH%" -Xmx1024M -cp %cp% cn.com.sby.hbfm.HBFMLaunch %1

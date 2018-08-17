@@ -12,16 +12,6 @@
             <saveModelPathString>/home/spbun</saveModelPathString>
         </connectionInfo>
         <connectionInfo>
-            <name>软件更新服务器</name>
-            <jdbcDriverName>com.mysql.jdbc.Driver</jdbcDriverName>
-            <jdbcConnString>jdbc:mysql://192.168.3.13:3306/update</jdbcConnString>
-            <username>root</username>
-            <password>infcn</password>
-            <packageNameString>cn.com.infcn.core.model</packageNameString>
-            <tablePrefixString>ade,upd</tablePrefixString>
-            <saveModelPathString>D:\GR\Windows\Desktop</saveModelPathString>
-        </connectionInfo>
-        <connectionInfo>
             <name>连接</name>
             <jdbcDriverName>com.mysql.jdbc.Driver</jdbcDriverName>
             <jdbcConnString>jdbc:mysql://192.168.2.xx:3306/sechma</jdbcConnString>
