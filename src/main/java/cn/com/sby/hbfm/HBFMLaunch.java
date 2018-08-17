@@ -11,11 +11,11 @@ package cn.com.sby.hbfm;
  * @date 2017年4月27日
  * @version 1.0
  */
-public class NdddLaunch {
+public class HBFMLaunch {
 
     public static void main(String[] args) {
 
         // 开始服务
-        NdddApplication.getInstance().startApp();
+        HBFMApplication.getInstance().startApp();
     }
 }

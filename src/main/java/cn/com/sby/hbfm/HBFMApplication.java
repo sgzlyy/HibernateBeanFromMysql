@@ -1,9 +1,5 @@
 package cn.com.sby.hbfm;
 
-import java.io.File;
-
-import org.apache.log4j.Logger;
-
 import cn.com.sby.common.FileUtil;
 import cn.com.sby.common.SwingUtil;
 import cn.com.sby.hbfm.gui.connselect.ConnectionSelectFrame;
@@ -11,6 +7,9 @@ import cn.com.sby.hbfm.model.ConnectionInfo;
 import cn.com.sby.hbfm.model.PersistenceObject;
 import cn.com.sby.hbfm.service.SaveFileLoadService;
 import cn.com.sby.hbfm.service.SaveFileStoreService;
+import org.apache.log4j.Logger;
+
+import java.io.File;
 
 /**
  *
@@ -21,22 +20,22 @@ import cn.com.sby.hbfm.service.SaveFileStoreService;
  * @version 1.0
  *
  */
-public class NdddApplication {
+public class HBFMApplication {
 
     /** 日志对象 */
-    private static final Logger LOG = Logger.getLogger(NdddApplication.class);
+    private static final Logger LOG = Logger.getLogger(HBFMApplication.class);
 
-    private static NdddApplication instance = null;
+    private static HBFMApplication instance = null;
 
     /**
      * 单例模式
      * 
      * @return
      */
-    public static NdddApplication getInstance() {
+    public static HBFMApplication getInstance() {
 
         if (instance == null) {
-            instance = new NdddApplication();
+            instance = new HBFMApplication();
         }
 
         return instance;
@@ -57,7 +56,7 @@ public class NdddApplication {
     /**
      * 默认的构造方法
      */
-    private NdddApplication() {
+    private HBFMApplication() {
         // NOTHINT
     }
 

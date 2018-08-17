@@ -12,7 +12,7 @@ import javax.swing.JTable;
 import javax.swing.WindowConstants;
 
 import cn.com.sby.common.StringUtil;
-import cn.com.sby.hbfm.NdddApplication;
+import cn.com.sby.hbfm.HBFMApplication;
 import cn.com.sby.hbfm.gui.common.table.TableModelExt;
 import cn.com.sby.hbfm.model.ConnectionInfo;
 import cn.com.sby.hbfm.model.DBConfigItem;
@@ -77,7 +77,7 @@ public class DataBaseAnaylizeFrame extends JFrame {
 	 */
 	private JTabbedPane initCenterPanel() {
 
-		ConnectionInfo info = NdddApplication.getInstance().getCurrentConnectionInfo();
+		ConnectionInfo info = HBFMApplication.getInstance().getCurrentConnectionInfo();
 
 		MysqlAnaylizerServiceI service = new Mysql55AnaylizerService();
 		List<DBConfigItem> variables = service.getVariables(info);

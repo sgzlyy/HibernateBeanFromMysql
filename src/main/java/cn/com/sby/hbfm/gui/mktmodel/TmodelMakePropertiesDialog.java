@@ -25,7 +25,7 @@ import cn.com.sby.common.ui.ext.JDialogExt;
 import cn.com.sby.common.ui.ext.JLabelExt;
 import cn.com.sby.common.ui.ext.JPanelExt;
 import cn.com.sby.common.ui.ext.JTextFieldExt;
-import cn.com.sby.hbfm.NdddApplication;
+import cn.com.sby.hbfm.HBFMApplication;
 import cn.com.sby.hbfm.gui.console.TmodelMakerConsoleDialog;
 import cn.com.sby.hbfm.model.ConnectionInfo;
 
@@ -127,7 +127,7 @@ public class TmodelMakePropertiesDialog extends JDialogExt {
         connectionInfo.setSaveModelPathString(selectedForder.getText());
 
         // 保存信息->文件
-        NdddApplication.getInstance().flushInfo2File();
+        HBFMApplication.getInstance().flushInfo2File();
 
         // 弹出执行对话框
         new TmodelMakerConsoleDialog(this, connectionInfo, new File(selectedForder.getText()), tablePrefix,

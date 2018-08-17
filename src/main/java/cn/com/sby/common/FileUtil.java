@@ -8,9 +8,8 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import cn.com.sby.hbfm.HBFMApplication;
 import org.apache.log4j.Logger;
-
-import cn.com.sby.hbfm.NdddApplication;
 
 public class FileUtil {
 
@@ -22,7 +21,7 @@ public class FileUtil {
     /**
      * 缓存用的安装路径
      */
-    private static String installPath = NdddApplication.getInstance().forder4Develop;
+    private static String installPath = HBFMApplication.getInstance().forder4Develop;
 
     private static String resourceImagePath = null;
 

@@ -15,6 +15,7 @@ import javax.swing.JOptionPane;
 import javax.swing.WindowConstants;
 import javax.swing.table.DefaultTableModel;
 
+import cn.com.sby.hbfm.HBFMApplication;
 import org.apache.log4j.Logger;
 
 import cn.com.sby.common.ui.ext.JButtonExt;
@@ -22,7 +23,6 @@ import cn.com.sby.common.ui.ext.JPanelExt;
 import cn.com.sby.common.ui.ext.JScrollPaneExt;
 import cn.com.sby.common.ui.ext.JTableExt;
 import cn.com.sby.common.ui.util.TableUtil;
-import cn.com.sby.hbfm.NdddApplication;
 import cn.com.sby.hbfm.gui.common.table.TableModelExt;
 import cn.com.sby.hbfm.gui.major.MainFrame;
 import cn.com.sby.hbfm.model.ConnectionInfo;
@@ -69,7 +69,7 @@ public class ConnectionSelectFrame extends JFrame {
 	 */
 	private void loadData() {
 
-		PersistenceObject object = NdddApplication.getInstance().getPersistenceObject();
+		PersistenceObject object = HBFMApplication.getInstance().getPersistenceObject();
 
 		if (object != null) {
 			cacheInfo = object.getConnectionInfos();
@@ -224,7 +224,7 @@ public class ConnectionSelectFrame extends JFrame {
 
 		ConnectionInfo info = cacheInfo.get(row);
 
-		NdddApplication.getInstance().setCurrentConnectionInfo(info);
+		HBFMApplication.getInstance().setCurrentConnectionInfo(info);
 
 		new MainFrame(info).setVisible(true);
 
@@ -248,7 +248,7 @@ public class ConnectionSelectFrame extends JFrame {
 
 		cacheInfo.remove(row);
 		flushConnectionView();
-		NdddApplication.getInstance().flushInfo2File();
+		HBFMApplication.getInstance().flushInfo2File();
 
 	}
 
@@ -270,7 +270,7 @@ public class ConnectionSelectFrame extends JFrame {
 
 		if (ConnectionInputDialog.BTN_OK_CLICKED == result) {
 			flushConnectionView();
-			NdddApplication.getInstance().flushInfo2File();
+			HBFMApplication.getInstance().flushInfo2File();
 		}
 	}
 
@@ -310,7 +310,7 @@ public class ConnectionSelectFrame extends JFrame {
 			cacheInfo.add(info);
 			addRow2View(info);
 			flushConnectionView();
-			NdddApplication.getInstance().flushInfo2File();
+			HBFMApplication.getInstance().flushInfo2File();
 		}
 	}
 }

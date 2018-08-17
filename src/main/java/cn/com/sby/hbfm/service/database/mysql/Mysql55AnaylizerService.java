@@ -181,7 +181,7 @@ public class Mysql55AnaylizerService extends AbstractMysqlAnaylizerService {
         sql4ForeignKey.append(" TABLE_NAME = ?");
 
         // ConnectionInfo info =
-        // NdddApplication.getInstance().getCurrentConnectionInfo();
+        // HBFMApplication.getInstance().getCurrentConnectionInfo();
         String sechma = null;
 
         // 首先计算当前使用的sechma
