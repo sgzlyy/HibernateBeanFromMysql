@@ -13,7 +13,7 @@
     </filter>
   </appender>
 
-  <category name="cn.com.spbun" additivity="false">
+  <category name="cn.com.sby" additivity="false">
     <level value="debug" />
     <appender-ref ref="CONSOLE" />
   </category>
