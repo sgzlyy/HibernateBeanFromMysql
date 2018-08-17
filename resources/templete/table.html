@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>${tableName} - ${tableDescribe}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body {
+	font-size: 9pt;
+}
+
+.styledb {
+	font-size: 14px;
+}
+
+.styletab {
+	font-size: 14px;
+	padding-top: 15px;
+}
+
+a {
+	color: #015FB6;
+}
+
+a:link, a:visited, a:active {
+	color: #015FB6;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #E33E06;
+}
+</style>
+</head>
+<body>
+	<div style="text-align: center">
+		<div>
+			<table border="0" cellpadding="5" cellspacing="0" width="90%">
+				<tr>
+					<td bgcolor="#FBFBFB">
+						<table cellspacing="0" cellpadding="5" border="1" width="100%"
+							bordercolorlight="#D7D7E5" bordercolordark="#D3D8E0">
+							<caption>
+								<div class="styletab">
+									${tableName}<br>${tableDescribe} 
+								</div>
+								<a href='../数据库表目录.html' style='float: right; margin-top: 6px;'>返回目录</a>
+							</caption>
+
+
+							<#-- 这里为表格头 -->
+							<tr bgcolor="#F0F0F0">
+								<td>序号</td>
+								<td>字段名称</td>
+								<td>字段类型</td>
+								<td>字段长度</td>
+								<td>字段小数长度</td>
+								<td>是否允许空值</td>
+								<td>是否为主键</td>
+								<td>默认值</td>
+								<td>说明</td>
+							</tr>
+
+							<#-- 下面为表格的内容 --> <#list columnInfos as columnInfo>
+							<tr>
+								<td>${columnInfo_index + 1}</td>
+								<td>${columnInfo.columnNameEn?default("&nbsp;")}</td>
+								<td>${columnInfo.columnType?default("&nbsp;")}</td>
+								<td>${columnInfo.columnLength?default("&nbsp;")}</td>
+								<td>${columnInfo.columnDecimalsLength?default("&nbsp;")}</td>
+								<td><#if columnInfo.isCanNull?exists><#if
+									columnInfo.isCanNull>是</#if></#if></td>
+								<td><#if columnInfo.isPrimaryKey?exists><#if
+									columnInfo.isPrimaryKey>是</#if></#if></td>
+								<td>${columnInfo.defaultValue?default("&nbsp;")}</td>
+								<td>${columnInfo.description?default("&nbsp;")}</td>
+							</tr>
+							</#list>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

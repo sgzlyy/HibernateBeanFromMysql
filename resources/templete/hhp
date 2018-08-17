@@ -1,0 +1,25 @@
+[OPTIONS]
+CITATION=Made by NOLYDAKE
+Compatibility=1.1 or later
+Compiled file=D:\数据库帮助文档.chm
+Contents file=chm.HHC
+COPYRIGHT=www.jinwin.net
+Default topic=数据库表目录.html
+Default Window=Main
+Display compile notes=Yes
+Display compile progress=Yes
+Full-text search=Yes
+Index file=chm.HHK
+Title=数据库帮助文档
+Enhanced decompilation=yes
+
+[WINDOWS]
+Main="数据库帮助文档","chm.hhc","chm.hhk","数据库表目录.html","数据库表目录.html",,,,,0x63520,180,0x104E, [0,0,745,509],0x0,0x0,,,,,0
+
+[MERGE FILES]
+
+[FILES]
+E:\我的代码\Winform\DBDcoumentCreater\DBDcoumentCreater\bin\Debug\tmp\数据库表目录.html
+E:\我的代码\Winform\DBDcoumentCreater\DBDcoumentCreater\bin\Debug\tmp\表结构\Code  .html
+E:\我的代码\Winform\DBDcoumentCreater\DBDcoumentCreater\bin\Debug\tmp\表结构\Files  文件列表.html
+E:\我的代码\Winform\DBDcoumentCreater\DBDcoumentCreater\bin\Debug\tmp\表结构\Menus  菜单表.html
