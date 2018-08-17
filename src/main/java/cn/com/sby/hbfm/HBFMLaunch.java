@@ -4,7 +4,7 @@ package cn.com.sby.hbfm;
  * 系统的入口<br>
  * 调试的时候，请设置系统参数-Dtest.SystemStartForder来设置系统的启动路径，系统会根据这个启动路径寻找相关信息，
  * 比如resources目录等 <br>
- * 比如-Dtest.SystemStartForder=D:\codes\workspacex\nddd0.2
+ * 比如-Dtest.SystemStartForder=D:\codes\workspacex\hbfm
  * Dtest.SystemStartForder=D:\javaproject_ceshi\hbfm
  * 
  *
